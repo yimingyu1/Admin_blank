@@ -1,4 +1,4 @@
-package cn.mingyu.blankAdmin.schema;
+package cn.mingyu.blankAdmin.domain;
 
 import lombok.Data;
 
@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
  * @since JDK 1.8
  */
 @Data
-public class BaseDO {
+public class BaseObj {
     private int id;
     private LocalDateTime createTime;
     private LocalDateTime updateTime;

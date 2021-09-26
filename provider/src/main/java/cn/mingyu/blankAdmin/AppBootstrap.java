@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.PropertySource;
 
 /**
  * ClassName: AppBootstap
@@ -17,6 +18,10 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan(basePackages = {
         "cn.mingyu.blankAdmin.*"
+})
+@PropertySource({
+        "classpath:config/jdbcConnectConfig.properties",
+        "classpath:config/druidConfig.yml"
 })
 @Slf4j
 public class AppBootstrap {

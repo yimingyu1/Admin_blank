@@ -1,5 +1,6 @@
-package cn.mingyu.blankAdmin.schema;
+package cn.mingyu.blankAdmin.domain.schema;
 
+import cn.mingyu.blankAdmin.domain.BaseObj;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -14,7 +15,7 @@ import java.io.Serializable;
  * @since JDK 1.8
  */
 @Data
-public class UserDO extends BaseDO implements Serializable{
+public class UserDO extends BaseObj implements Serializable{
 
     private static final long serialVersionUID = 6128280373285464001L;
 
